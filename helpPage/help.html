@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="help.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="center-helper-nav">
+        <div class="keep-things-togather">
+          <h2 class="logo">neo:lights:out</h2>
+          <div class="options">
+            <a href="/index.html" class="play-link">play</a>
+            <a href="/levelsPage/levels.html" class="levels-link">levels</a>
+            <a href="#" class="help-link active">help</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-cont">
+      <h1>neo:lights:out</h1>
+      <p>
+        This is a simple puzzle game. The aim is to turn off all the lights.
+      </p>
+      <p>
+        Tap a button. The neighboring buttons will light up too, or turn off –
+        depending on what state they were in before.
+      </p>
+      <p><img src="/helpPage/lightsout-white-256x256.png" alt="" /></p>
+      <p>
+        This app is a remake of the original Lights Out handheld game that was
+        manufactured by Tiger Electronics. Here's a
+        <a href="#"> more detailed description.</a>
+      </p>
+      <p>
+        If you like this game, please let others know too! &nbsp<a href="#"
+          >Share on Twitter</a
+        >
+      </p>
+      <div class="first-bottom-info">
+        <span>
+          A project by &nbsp<a href="#">grooovinger</a>
+        </span>
+        <span>
+
+          <a href="#">Imprint </a> &nbsp|&nbsp <a href="#">Privacy Statement</a>
+        </span>
+      </div>
+      <div class="second-bottom-info">
+        Built with <a href="https://kit.svelte.dev/"> SvelteKit</a>.&nbspProudly hosted on <a href="https://www.netlify.com/">Netlify.</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelectorAll(".options a").forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        document.querySelectorAll(".options a").forEach((ele) => {
+          ele.classList.remove("active");
+        });
+        element.classList.add("active");
+        console.log(1);
+      });
+    });
+    document.querySelector(".options").addEventListener("mouseout", () => {
+      document.querySelectorAll(".options a").forEach((ele) => {
+        ele.classList.remove("active");
+      });
+      document.querySelector(".options .help-link").classList.add("active");
+    });
+  </script>
+</html>

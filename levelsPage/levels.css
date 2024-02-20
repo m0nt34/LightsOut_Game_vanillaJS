@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans Condensed";
+}
+
+body {
+  background-color: #d93a7c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1700px;
+  background-color: #d93a7c;
+  padding: 10px;
+}
+
+.main-nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-helper-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+  width: 100%;
+}
+
+.main-nav .keep-things-togather {
+  display: flex;
+  max-width: 1700px;
+  width: 100%;
+  justify-content: space-between;
+  color: #fffaf8;
+  font-size: 16.2px;
+  font-weight: 500;
+}
+
+.main-nav .keep-things-togather .options {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-nav .keep-things-togather .options a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 34px;
+  padding: 8px 6px;
+  color: #fffaf8;
+}
+
+.main-nav .keep-things-togather .options a.active {
+  border-bottom: solid 2px #fffaf8;
+}
+
+.main-cont {
+  max-width: 560px;
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+  margin: 180px 15px 0 15px;
+}
+
+.main-cont h1 {
+  max-width: 560px;
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fffaf8;
+}
+
+.main-cont ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-width: 560px;
+  width: 100%;
+  list-style: none;
+  color: #fffaf8;
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.main-cont ul li span {
+  display: flex;
+  max-width: 130px;
+  width: 100%;
+}
+
+.main-cont ul li button {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial;
+  letter-spacing: 1px;
+  padding: 8px 9.6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #d93a7c;
+  background: linear-gradient(145deg, #fffdfe, #f4c7d9);
+}

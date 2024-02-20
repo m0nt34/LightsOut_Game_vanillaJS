@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans Condensed';
+}
+
+body {
+  background-color: #d93a7c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav {
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  background-color: #d93a7c;
+  padding: 10px;
+}
+
+.main-nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-helper-nav{
+  width: 100%;
+}
+.center-helper-nav,
+.main-nav .keep-things-togather,
+.main-nav .keep-things-togather .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav .keep-things-togather {
+  justify-content: space-between;
+  color: #fffaf8;
+  font-size: 16.2px;
+  font-weight: 500;
+  max-width: 1700px;
+  width: 100%;
+}
+
+.main-nav .keep-things-togather .options {
+  flex-wrap: nowrap;
+}
+
+.main-nav .keep-things-togather .options a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 34px;
+  padding: 8px 6px;
+  color: #fffaf8;
+}
+
+.main-nav .keep-things-togather .options a.active {
+  border-bottom: solid 2px #fffaf8;
+}
+
+.main-cont {
+  color: #fffaf8;
+  max-width: 600px;
+  width: 100%;
+  padding: 180px 15px 0 15px;
+}
+
+.main-cont h1 {
+  font-size: 40px;
+}
+
+.main-cont p {
+  font-family: sans-serif;
+  font-size: 19px;
+  padding: 20px 0;
+}
+
+.main-cont a {
+  color: #fffaf8;
+}
+
+img {
+  height: 100px;
+  user-select: none;
+}
+
+.main-cont p:nth-child(6) {
+  border-bottom: dashed 2px;
+}
+
+.main-cont .first-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main-cont .second-bottom-info {
+  padding: 0;
+}
